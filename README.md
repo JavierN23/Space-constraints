@@ -42,14 +42,16 @@ Create a new function to reverse an array that takes up just O(1) extra space.
 
 
 Following are three different implementations of a function that accepts an array of numbers and returns an array containing those numbers multiplied by 2. For example, if the input is [5, 4, 3, 2, 1], the output will be [10, 8, 6, 4, 2].
-function doubleArray1(array) { 
-	let newArray = [];
 
+	function doubleArray1(array) { 
+	let newArray = [];
 	for(let i = 0; i < array.length; i++) { 
 		newArray.push(array[i] * 2);
 	}
 	return newArray; 
     }
+
+    
     function doubleArray2(array) {
 	for(let i = 0; i < array.length; i++) {
   	array[i] *= 2;
@@ -57,6 +59,9 @@ function doubleArray1(array) {
     }
 	return array; 
     }
+
+
+    
     function doubleArray3(array, index=0) { 
 	if (index >= array.length) { return; }
     array[index] *= 2;
