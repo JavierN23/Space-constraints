@@ -13,7 +13,7 @@ Following is the 'Word Builder' algorithm. Describe its space complexity in term
 		}
 		return collection; 
     }
-
+Outer loop runs n amount of time. Inner loop runs n amount of times. The number of combination will be n * (n - 1). meaning the time complexity will be O(n^2). The reason it's not O(n) is because the number of items stores isn't proportional to the input size it's to the square input size. 
 
 
 Following is a function that reverses an array. Describe its space complexity in terms of Big O:
@@ -26,9 +26,17 @@ Following is a function that reverses an array. Describe its space complexity in
 		return newArray;
     }    
 
-
+Once it has an input, this code loops through an empty array and adds it to the new array. Then, it prints it in reverse. As n increases, the size of the new array increases linearly, therefore having a time complexity of O(n).
 
 Create a new function to reverse an array that takes up just O(1) extra space.
+
+	function doubleArray1(array) {
+	let newArray = [];
+	for (let i = 0; i < array.length; i++) {
+		newArray.push(array[i] * 2);
+	}
+	return newArray;
+	}
 
 
 
