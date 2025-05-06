@@ -30,8 +30,7 @@ Once it has an input, this code loops through an empty array and adds it to the 
 
 Create a new function to reverse an array that takes up just O(1) extra space.
 
-	function doubleArray1(array) {
-	let newArray = [];
+	function doubleArrayInPlace(array) {
 	for (let i = 0; i < array.length; i++) {
 		newArray.push(array[i] * 2);
 	}
