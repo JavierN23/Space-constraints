@@ -56,4 +56,4 @@ function doubleArray1(array) {
 	return array; 
     }
 
-    ![Space constraints drawio](https://github.com/user-attachments/assets/1b3f855f-8a57-4dcb-9f01-8d151f6dd54f)
+![Space constraints drawio](https://github.com/user-attachments/assets/1b3f855f-8a57-4dcb-9f01-8d151f6dd54f)
